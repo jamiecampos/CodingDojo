@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Hover to change the image" />
+    <link rel="stylesheet" type="text/css" href="hover_in_out.css">
+    <title>Hover In/Out</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" /></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('img').hover(function(){
+                    var temp = $(this).attr('src');
+    				$(this).attr('src', $(this).attr('alt'));
+    				$(this).attr('alt', temp);
+                });
+            });
+        </script>
+</head>
+<body>
+    <div id="container">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/boy.jpeg" alt="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/girl.jpeg">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/boy.jpeg" alt="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/girl.jpeg">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/boy.jpeg" alt="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/girl.jpeg">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/boy.jpeg" alt="file:///Users/Jamie/Documents/CodingDojo/Week03/hover_in_out/girl.jpeg">
+    </div>
+</body>

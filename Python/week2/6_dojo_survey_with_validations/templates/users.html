@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Dojo Survey</title>
+    </head>
+    <body>
+        <div id="container">
+            <h4>Submitted Info</h4>
+            </form>
+                <ul>
+                    <li>Name: {{data['name']}}</li>
+                    <li>Dojo Location: {{data['location']}}</li>
+                    <li>Favorite Language: {{data['language']}}</li>
+                    <li>Comment: {{data['comments']}}</li>
+                    <li><button class="right_align">Go Back</button></li>
+                </ul>
+                <form action = '/'>
+            </form>
+        <div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Upload Contact Cards" />
+    <link rel="stylesheet" type="text/css" href="contact_card.css">
+    <title>Contact Card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" /></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('form').submit(function(){
+                            var htmlString = "<div class='contact_card'><h1>" +
+                            $('#first_name').val() + " " +
+                            $('#last_name').val() +
+                            "</h1><p>Click for description!</p><p class='hidden'>" + $('#description').val() + "</p></div>"
+                        $('#all_contacts').append(htmlString);
+    				return false;
+                })
+                $(document).on('click', '.contact_card', function(){
+                    $(this).children().toggle();
+                })
+            })
+        </script>
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <form>
+                <ul>
+                    <li>First Name: <input type="text" id="first_name" name="First Name"></li>
+                    <li>Last Name: <input type="text" id="last_name" name="Last Name"></li>
+                    <li>Description: <textarea id="description" id="description" placeholder="Enter description"></textarea></li>
+                    <li><input type="submit" id="submit" value="Add User"></li>
+                </ul>
+            </form>
+        </div>
+        <div id="all_contacts">
+        </div>
+    </div>
+</body>

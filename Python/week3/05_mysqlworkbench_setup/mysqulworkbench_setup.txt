@@ -1,0 +1,6 @@
+USE twitter;
+
+SELECT * FROM users;
+
+SELECT * FROM users
+Where id = 1;

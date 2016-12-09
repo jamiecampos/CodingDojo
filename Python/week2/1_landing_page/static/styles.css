@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container{
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+p{
+    padding: 10px 0px 10px 0px;
+}
+
+.footnote{
+    font-style: italic;
+    font-size: 10px;
+}
+
+form{
+    margin: 20px;
+}
+
+form input{
+    margin: 10px 0px 10px 0px;
+}

@@ -1,0 +1,93 @@
+1. What is source code?
+
+    Sequences of instructions written to the computer in a programming language
+
+
+2. What makes computers so "smart," anyway?
+
+    Computers can solve a diverse range of problems through software, written in
+    a programming language by human programmers.
+
+
+3. What is the purpose of a programming language?
+
+    They read in a series of  human-readable steps instructing a computer how to
+    respond, and they translate the steps into a format the computer can
+    understand and later execute.
+
+
+4. What are 3 examples of programming languages? Why are there so many of these?
+
+    PHP, Python, Ruby. Each language has differing strengths and therefore is
+    useful in different situations.
+
+
+5. What is a variable? Why are variables useful?
+
+    A variable is a specific spot in memory with a label that you give it. It
+    helps the programmer to juggle multiple points of data at once.
+
+
+6. What is the difference between a single-equals (=) and a double-equals (==)?
+
+    = sets things and == tests things.
+
+
+7. What is the difference between a double-equals (==) and a triple-equals (===)?
+
+    == converts comparison data to the same data type while === does not.
+
+
+8. Why does the developer console exist?
+
+    It helps us to test run our code, showing errors, warnings, and other
+    messages about our program.
+
+
+9. When we talk about "conditional" statements, what does that mean? What is an example?
+
+    The statement looks at the value of one or more variables and executes
+    certain lines of code based on that result. For example:
+
+    if(myName == "Martin"){
+        console.log("Hey there, Martin, how's it going?")
+    }
+
+10. Why would we want FOR or WHILE loops in our code?
+
+    FOR and WHILE loops are useful in performing the same action multiple times
+    without unnecessarily wasting time or memory.
+
+
+11. When would you use a WHILE loop instead of a FOR loop?
+
+    FOR loops are good when you know exactly how many times the lines of code
+    they contain should be run. While loops are good when you don't know how
+    many times to loop.
+
+
+12. What is a function? Why would we use functions?
+
+    A function is a grouping of lines of code that can be called multiple times
+    if needed.
+
+
+13. How many values can you receive back from a function? How many values can you send in?
+
+    A programmer can input any number of values, but can only receive one back.
+
+
+14. What is an array? How many values does it hold?
+
+    An array is a list in which any number of values are stored.
+
+
+15. What is a T-diagram and why should I know how to use one?
+
+    A T-diagram is a way to record the state of all your local variables,
+    including arrays and heir indices. It helps to decipher complex code.
+
+
+16. What are the two ways to comment JS code? When would you use one versus the other?
+
+    Use // to comment on just one line and /*...*/ to comment across multiple lines.

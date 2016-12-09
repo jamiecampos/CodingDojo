@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>The Wall</title>
+</head>
+<body>
+    <div id = "toolbar">
+        <ul>
+            <li>CodingDojo Wall</li>
+            <li>Welcome {% for name in names %}
+                {{ names['first_name'] }}
+            {% endfor %}</li>
+            <li class = "right_hand"><a href="/logout">log off</a></li>
+        </ul>
+    </div>
+    <div id = "inner_container">
+        <div id = "post">
+            <h4 class= "message_form">Get the conversation going. Post a message:</h4>
+            <form action="/message", method="POST", class="message_form">
+                <textarea style="width:80%;", rows="4", name='post_message'></textarea>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages%}
+                        {% for category, message in messages %}
+                            {% if category == 'post_message' %}
+                                <br>
+                                <span class="errors">{{ message }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}</td>
+                <p><input type="submit" value="Post a message"></input></p>
+            </form>
+        </div>
+        <div id = "the_wall">
+            {% for message in all_messages %}
+                <br><span class="message_info">{{ message['author'] }}{{ message['date'] }}</span><br>
+                <span class="message">{{ message['msg_text'] }}<span="message"><br><br>
+                    {% for comment in all_comments %}
+                        {% if comment['message_id'] == message['id'] %}
+                            <span class="comment_info">{{ comment['author'] }}{{ comment['date'] }}</span><br>
+                            <span class="comment">{{ comment['comm_text'] }}</span><br>
+                        {% endif %}
+                    {% endfor %}
+                <h4 class= "comment_form">Post a comment</h4>
+                <form action="/comment", method="POST", class="comment_form">
+                    <input type="hidden" name="msg_id" value="{{ message['id'] }}">
+                    <textarea style="width:80%;", rows="4", name="post_comment"></textarea>
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages%}
+                            {% for category, message in messages %}
+                                {% if category == 'post_comment' %}
+                                    <span class="errors">{{ message }}</span>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}</td>
+                    <p><input type="submit" value="Post a comment"></input></p>
+                </form>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

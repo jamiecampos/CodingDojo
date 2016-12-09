@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container{
+    width: 970px;
+    margin: 0px auto;
+    font-family: sans-serif;
+    font-size: 12;
+    }
+
+.header{
+    background-color: #900003;
+    width: 920px;
+    padding: 5px 30px 5px 20px;
+}
+
+#branding{
+    display: inline-block;
+    vertical-align: middle;
+}
+#motto{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: 100%;
+    }
+
+#quick_links{
+    color: white;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 250px;
+}
+
+#quick_links form{
+    margin-top: 10px;
+}
+
+#submit{
+    background-color: transparent;
+    color: white;
+    padding: 2px;
+    border: 1px solid white;
+}
+
+#quick_links a{
+    color: yellow;
+
+}
+
+#top_nav{
+    width: 928px;
+    margin: 0px auto;
+    margin-right: 0px;
+    padding: 10px 20px 10px 20px;
+    background-color: #DCDCDC;
+    color: #696969;
+    border-style: solid;
+    border-color: #696969;
+    border-width: 1px;
+}
+
+#top_nav a:link{
+    color: #696969;
+    text-decoration: none;
+}
+
+#left_nav{
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    vertical-align: top;
+    background-color: #DCDCDC;
+    display: inline-block;
+    border-style: solid;
+    border-color: #696969;
+    border-width: 1px;
+}
+
+#left_nav li{
+    padding: 5px 0px 5px 20px;
+}
+
+a{
+    color: #900003;
+}
+
+li{
+    padding-left: 20px;
+}
+
+.main_content{
+    width: 600px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+h1{
+    color: #900003;
+    font-size: 20;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+h3{
+    color: #900003;
+    padding: 10px 0px 10px 0px;
+    font-size: 12;
+    font-weight: bold;
+}
+
+#news{
+    border-style: solid;
+    border-color: #696969;
+    border-width: 2px 0px 2px 0px;
+}
+
+#news span{
+    font-weight: bold;
+}

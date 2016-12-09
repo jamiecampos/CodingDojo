@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Using JQuery libraries to create a webpage">
+    <title>JQuery Libraries</title>
+    <link rel="stylesheet" type="text/css" href="jquery_libraries.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/jquery.backstretch.min.js"></script>
+    <script src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/unslider-min.js"></script>
+    <script src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/jquery.sticky.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.backstretch("file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/classroom.jpg");
+            $('.slider').unslider({
+                autoplay: true
+            });
+            $("#header").sticky();
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/clock.jpg">
+    </div>
+    <div id="left_image">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/boy.jpg" id="boy">
+    </div>
+    <div id="right_text">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="slider">
+	       <ul>
+               <li><img src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/cars.jpg"></li>
+               <li><img src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/girl.jpg"></li>
+               <li><img src="file:///Users/Jamie/Documents/CodingDojo/Week03/using_other_jquery_libraries.html/mandolin.jpg"></li>
+           </ul>
+    </div>
+</div>
+</body>
+</html>

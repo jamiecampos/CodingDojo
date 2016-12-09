@@ -1,0 +1,46 @@
+Last login: Wed Sep 28 12:46:37 on ttys000
+Jamies-MacBook-Pro:~ Jamie$ cd Desktop
+Jamies-MacBook-Pro:Desktop Jamie$ mkdir test
+Jamies-MacBook-Pro:Desktop Jamie$ cd test
+Jamies-MacBook-Pro:test Jamie$ touch index.html
+Jamies-MacBook-Pro:test Jamie$ touch styles.css
+Jamies-MacBook-Pro:test Jamie$ git init
+Initialized empty Git repository in /Users/Jamie/Desktop/test/.git/
+Jamies-MacBook-Pro:test Jamie$ git add .
+Jamies-MacBook-Pro:test Jamie$ git commit -m "First commit"
+[master (root-commit) 1bc27b2] First commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Jamies-MacBook-Pro:test Jamie$ vi index.html
+Jamies-MacBook-Pro:test Jamie$ git add .
+Jamies-MacBook-Pro:test Jamie$ git commit -m "update html"
+[master ad58c20] update html
+ 1 file changed, 7 insertions(+)
+Jamies-MacBook-Pro:test Jamie$ vi styles.css
+Jamies-MacBook-Pro:test Jamie$ git add .
+Jamies-MacBook-Pro:test Jamie$ git commit -m "update css"
+[master 69820ae] update css
+ 1 file changed, 8 insertions(+)
+Jamies-MacBook-Pro:test Jamie$ git log
+commit 69820ae37aeb0456cbf79bd92e0fade30e642dd4
+Author: JamieCampos <jamie.j.campos@gmail.com>
+Date:   Wed Sep 28 12:50:52 2016 -0500
+
+    update css
+
+commit ad58c204b6075e07fbb1d9be2a15cde67500be55
+Author: JamieCampos <jamie.j.campos@gmail.com>
+Date:   Wed Sep 28 12:49:46 2016 -0500
+
+    update html
+
+commit 1bc27b26477e71f284c4bbddbc73ecd84cef5809
+Author: JamieCampos <jamie.j.campos@gmail.com>
+Date:   Wed Sep 28 12:48:22 2016 -0500
+
+    First commit
+Jamies-MacBook-Pro:test Jamie$ git revert -n HEAD
+Jamies-MacBook-Pro:test Jamie$ git commit -m "revert"
+[master 447247d] revert
+ 1 file changed, 8 deletions(-)

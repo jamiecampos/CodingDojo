@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Great Number Game</title>
+    </head>
+    <body>
+        <div id="container">
+            <h3>Welcome to the Great Number Game!</h3>
+            <p>I am thinking of a number between 1 and 100</p>
+            <p>Take a guess!</p><br>
+            {% if message %}
+                {{ message }}<br>
+            {% endif %}
+                {% if message != "You're Right" %}
+                <form action="/guess" method="post">
+                    <input type="number" name="guess"></input>
+                    <input type="submit" value="Submit"></input>
+                </form>
+                {% endif %}
+            {% if message == "You're Right" %}
+                <a href="/"><button>Start over</button></a>
+            {% endif %}
+        </div>
+    </body>
+</html>

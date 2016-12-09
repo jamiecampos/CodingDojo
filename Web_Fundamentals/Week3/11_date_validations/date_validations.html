@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Practicing JQueryUI with datepicker">
+    <title>CodingDojo Plan-a-Cruise</title>
+    <link rel="stylesheet" type="text/css" href="date_validations.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".datepicker").datepicker();
+
+            $("#travel_form").on("submit", function(){
+
+                var date_from = $("#from").val();
+				var date_to = $("#to").val();
+				var name = $("#name").val();
+                var errors = false;
+
+                if($("#from").val() == '' ){
+                    $('#from_error').append("Please select a departure date to continue.");
+                    errors = true;
+                }
+
+                if($("#to").val() == '' ){
+                    $('#to_error').append("Please select a return date to continue.");
+                    errors = true;
+                }
+
+                if($("#name").val() == ''){
+                    $('#name_error').append("Please enter your name to continue");
+                    errors = true;
+                }
+
+                if (errors==false)
+                    alert("Thanks, " + name + "! Your cruise leaves on " + date_from + " and returns on " + date_to + "!");
+
+            return false;
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <h1>Welcome to the Codingdojo plan-a-Cruise!</h1>
+    <form id="travel_form">
+        <p>From: <input type="text" class="datepicker" id="from"> <span id="from_error" class="hidden"></span></p>
+        <p>To: <input type="text" class="datepicker" id="to"> <span id="to_error" class="hidden"></span></p>
+        <p>Name: <input type="text" id="name"> <span id="name_error" class="hidden"></span></p>
+        <input type="submit" class="button" id="submit" value="Check dates!">
+    </form>
+</div>
+</body>
+</html>

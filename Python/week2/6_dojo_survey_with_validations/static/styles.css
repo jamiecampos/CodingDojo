@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 75px;
+    width: 300px;
+    border: 1px solid black;
+    font-family: arial;
+}
+
+form{
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+input[type=submit]{
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: 268px;
+    width: 50px
+
+}
+
+input{
+    width: 65%;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+.right_align{
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: 268px;
+    width: 50px
+}
+
+#messages{
+    color: red;
+    font-size: 10px;
+}

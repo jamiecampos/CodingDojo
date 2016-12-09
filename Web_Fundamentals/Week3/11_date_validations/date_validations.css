@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#container{
+    width: 800px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+form{
+    margin: 20px 0px 0px 40px;
+}
+
+input{
+    margin: 10px 10px 10px 0px;
+}
+
+.hidden{
+    color: pink;
+}
+
+.button{
+    color: white;
+    background-color: blue;
+    display: block;
+    height: 50px;
+    width: 100px;
+}

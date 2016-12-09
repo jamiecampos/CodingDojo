@@ -1,0 +1,28 @@
+<!DOCTYPE=html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="Description" content="Turn the ninja into a cat and back again" />
+<link rel="stylesheet" type="text/css" href="ninja_to_cat.css">
+<title>Ninja to Cat</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" /></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('img').click(function(){
+                var temp = $(this).attr('src');
+				$(this).attr('src', $(this).attr('alt'));
+				$(this).attr('alt', temp);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/ninja0.png" alt="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/cat0.png">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/ninja1.png" alt="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/cat1.png">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/ninja2.png" alt="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/cat2.png">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/ninja3.png" alt="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/cat3.png">
+        <img src="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/ninja4.png" alt="file:///Users/Jamie/Documents/CodingDojo/Week02/ninja_to_cat/cat4.png">
+    </div>
+</body>
+</html>

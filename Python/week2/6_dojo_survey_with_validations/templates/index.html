@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Dojo Survey</title>
+    </head>
+    <body>
+        <div id="container">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p><span id="messages">{{message}}<span></p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form class='user_form' action='/users' method='post'>
+                <ul>
+                    <li>Your Name: <input type='text' name='name' value=''></li>
+                    <li>Dojo Location:
+                            <select name="location">
+                                <option value="chicago">Chicago</option>
+                                <option value="dallas">Dallas</option>
+                                <option value="los_angeles">Los Angeles</option>
+                                <option value="seattle">Seattle</option>
+                                <option value="silicon_valley">Silicon Valley</option>
+                                <option value="washington_dc">Washington, DC</option>
+                            </select>
+                    </li>
+                    <li>Favorite Language:
+                            <select name="language">
+                                <option value="css">CSS</option>
+                                <option value="html">HTML</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="python">Python</option>
+                            </select>
+                    </li>
+                    <li>Comment (optional): </li>
+                    <li><textarea name="comments" value='' rows="10" cols="50"></textarea></li>
+                    <li><input type='submit' name='submit' value='Button'></li>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>

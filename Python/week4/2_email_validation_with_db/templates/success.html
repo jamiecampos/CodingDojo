@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Email_Validation" content="Validate email addresses">
+    <link rel="stylesheet" type="text/css" href="/Users/Jamie/Documents/CodingDojo/Python/week4/email_validation_with_db/static/styles.css">
+    <title>Email Validation with DB</title>
+</head>
+<body>
+    <div id="<container">
+        <p>The email address you entered({{last}}) is a VALID email address! Thank you!</p>
+        <div id="db">
+            <p>Email addresses entered:</p>
+            {% for result in results %}
+            <table>
+                <thead>
+                    <td>{{ result['email'] }}</td>
+                    <td>{{ result['created_on']}}</td>
+                </thead>
+            </table>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

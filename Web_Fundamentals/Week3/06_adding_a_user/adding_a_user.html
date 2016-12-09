@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Add a user to the table" />
+    <link rel="stylesheet" type="text/css" href="adding_a_user.css">
+    <title>Adding a User</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" /></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('form').submit(function(){
+                    $('tbody').append('<tr><td>' + $('#first_name').val() + '</td><td>' + $('#last_name').val() + '</td><td>' + $('#email').val() + '</td><td>' + $('#phone').val());
+    				return false;
+                });
+            });
+        </script>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Contact #</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <h1>Add User</h1>
+        <form>
+            <ul>
+                <li>First Name: <input type="text", id="first_name" name="First Name" value="First Name"></li>
+                <li>Last Name: <input type="text", id="last_name" name="Last Name" value="Last Name"></li>
+                <li>Email: <input type="text", id="email" name="Email" value="Email Address"></li>
+                <li>Contact No: <input type="text", id="phone" name="Contact #" value="Phone #"></li>
+                <li><input id="submit" type="submit" value="Add User"></li>
+            </ul>
+        </form>
+    </div>
+</body>

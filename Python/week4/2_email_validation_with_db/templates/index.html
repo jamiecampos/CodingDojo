@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Email_Validation" content="Validate email addresses">
+    <link rel="stylesheet" type="text/css" href="/Users/Jamie/Documents/CodingDojo/Python/week4/email_validation_with_db/static/styles.css">
+    <title>Email Validation with DB</title>
+</head>
+<body>
+    <div id="<con></con>tainer">
+        <div id="errors">
+        {% for error in errors %}
+            <p>{{error}}</p>
+        {% endfor %}
+        </div>
+        <div id="form">
+            <form action="/process" method="POST">
+                Email address: <input type="text" id="email" name="email", value=""><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

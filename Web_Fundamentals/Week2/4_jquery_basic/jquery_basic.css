@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 970px;
+    font-family: Arial;
+}
+
+.function{
+    width: 900px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+h1{
+    font-size: 20px;
+    padding: 5px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+p, .p_addclass{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#p_show{
+    display: none;
+}
+
+.addclass_style{
+    font-weight: bolder;
+    }

@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#container{
+    width: 830px;
+    padding: 20px;
+    font-family: Arial;
+}
+
+#form{
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+}
+
+#description{
+    width: 300px;
+    height: 150px;
+}
+
+#all_contacts{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.contact_card{
+    display: block;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.hidden{
+    display: none;
+}
+
+form{
+    text-align: left;
+    width: 300px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+    margin: 20px 0px 20px 0px;
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+}
+
+#description{
+    margin: 20px;
+}
+
+#submit{
+    margin-top: 20px;
+}

@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    margin: 20px;
+    font-family: sans-serif;
+}
+h4{
+    margin-bottom: 20px;
+}
+#registration, #login{
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 450px;
+}
+
+#registration{
+    background-color: DarkBlue;
+    color: white;
+}
+
+#login{
+    background-color: LightGray;
+}
+
+table{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.errors{
+    color: red;
+    font-size: 10px;
+}

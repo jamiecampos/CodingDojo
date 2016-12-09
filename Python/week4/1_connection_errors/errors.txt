@@ -1,0 +1,55 @@
+1. *No errors*
+
+        config = {
+                'host': 'fake',
+                'database': db, # we got db as an argument
+                'user': 'root',
+                'password': 'root',
+                'port': '8889' # change the port to match the port your SQL server is running on
+        }
+
+2.  This site can’t be reached
+    localhost refused to connect.
+    Search Google for localhost 5000
+    ERR_CONNECTION_REFUSED
+
+        config = {
+                'host': 'localhost',
+                'database': fake,
+                'user': 'root',
+                'password': 'root',
+                'port': '8889'
+        }
+3.  sqlalchemy.exc.OperationalError
+    OperationalError: (_mysql_exceptions.OperationalError)
+    (1045, "Access denied for user 'jamie'@'localhost' (using password: YES)")
+
+        config = {
+                'host': 'localhost',
+                'database': db, # we got db as an argument
+                'user': 'jamie',
+                'password': 'root',
+                'port': '8889' # change the port to match the port your SQL server is running on
+        }
+
+4.  sqlalchemy.exc.OperationalError
+    OperationalError: (_mysql_exceptions.OperationalError)
+    (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+        config = {
+                'host': 'localhost',
+                'database': db, # we got db as an argument
+                'user': 'root',
+                'password': 'fake',
+                'port': '8889' # change the port to match the port your SQL server is running on
+        }
+
+5. *Perpetual "Waiting for localhost...". Never loaded or timed out.*
+
+        config = {
+                'host': 'localhost',
+                'database': db, # we got db as an argument
+                'user': 'root',
+                'password': 'root',
+                'port': '8888' # change the port to match the port your SQL server is running on
+        }

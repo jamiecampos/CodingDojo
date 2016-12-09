@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dojo Survey: Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"
+</head>
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <th width="200px"><u>Submitted info:</u></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>{{ request.form['name'] }}</td>
+            </tr>
+            <tr>
+                <td>Dojo Location:</td>
+                <td>{{ request.form['location'] }}</td>
+            </tr>
+            <tr>
+                <td>Favorite Language</td>
+                <td>{{ request.form['language'] }}</td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td>{{ request.form['comments'] }}</td>
+            </tr>
+        </table>
+        <button><a href="/">Go Back</a></button>
+    </div>
+</body>
+</html>

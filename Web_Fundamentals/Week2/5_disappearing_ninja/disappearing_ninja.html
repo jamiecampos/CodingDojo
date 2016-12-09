@@ -1,0 +1,39 @@
+<!DOCTYPE=html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="Description" content="Make the ninjas disappear one-by-one and bring them all back" />
+<link rel="stylesheet" type="text/css" href="disappearing_ninja.css">
+<title>Disappearing Ninja</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" /></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            });
+            $('button').click(function(){
+                $('img').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+            </tr>
+            <tr>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+                <td><img src="file:///Users/Jamie/Documents/CodingDojo/Week02/disappearing_ninja/image.jpeg"></td>
+            </tr>
+        </table>
+        <button>Restore</button>
+    </div>
+</body>
+</html>

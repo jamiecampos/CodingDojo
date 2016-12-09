@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Georgia1, Georgia, serif
+}
+
+#container{
+    width: 800px;
+    padding: 0px 0px 20px 0px;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 0 auto;
+}
+
+#header img{
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+#boy{
+    width: 300px;
+    border-radius: 500px;
+    vertical-align: top;
+}
+
+#left_image, #right_text{
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+}
+
+#left_image{
+    width: 350px;
+    margin-left: 20px;
+}
+
+#right_text{
+    width: 400px;
+    margin-right: 25px;
+}
+
+h4{
+    font-family: Trebuchet MS1, Helvetica, sans-serif;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slider{
+    margin: 100px 0px 20px 0px;
+    position: relative;
+    overflow: auto;
+}
+
+.slider li{
+    list-style: none;
+}
+
+.slider img{
+    max-width: 780px;
+    max-height: 300px;
+    position: relative;
+    left: 20%;
+}
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+}
+.unslider-nav ol li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default;
+}
+
+.unslider{
+    overflow:auto;
+    padding:0;
+    margin: 0;
+}
+
+.unslider-wrap{
+    position:relative;
+}
+
+.unslider-wrap.unslider-carousel>li{
+    float:left
+}
+
+.unslider-vertical>ul{
+    height:100%
+}
+
+.unslider-vertical li{
+    float:none;
+    width:100%
+}
+
+.unslider-fade{
+    position:relative
+}
+
+.unslider-fade .unslider-wrap li{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    z-index:8
+}
+
+.unslider-fade .unslider-wrap li.unslider-active{
+    z-index:10
+}
+
+.unslider li,.unslider ol,.unslider ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border:none
+}
+
+.unslider-arrow{
+    position:absolute;
+    left:45%;
+    z-index:2;
+    cursor:pointer
+}
+
+.unslider-arrow.next{
+    left:auto;
+    right:45%;
+}

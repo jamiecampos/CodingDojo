@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Practicing JQueryUI with Accordion and Tab">
+    <title>Accordion and Tab</title>
+    <link rel="stylesheet" type="text/css" href="accordion_and_tabs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(function(){
+                $("#accordion").accordion();
+            });
+            $(function(){
+                $("#tabs").tabs();
+            });
+            $( function(){
+                $(".datepicker").datepicker();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <h1>Welcome to the Codingdojo plan-a-Cruise!</h1>
+    <form>
+        <p>From: <input type="text" class="datepicker"></p>
+        <p>To: <input type="text" class="datepicker"></p>
+        <p>Name: <input type="text" id="name">
+        <input type="submit" id="submit" value="Check dates!">
+    </form>
+</div>
+</body>
+</html>

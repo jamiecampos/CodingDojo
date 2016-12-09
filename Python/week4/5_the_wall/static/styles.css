@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+  height:100%;
+  min-height:100%;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height:100%;
+}
+
+#toolbar{
+    background-color: #26A6DB;
+    color: white;
+    margin: 0px 20px 0px 20px;
+    padding: 20px;
+    font-family: Arial;
+    }
+
+#toolbar ul{
+    list-style-type: none;
+}
+
+#toolbar li{
+    display: inline;
+    margin: 20px;
+}
+
+#toolbar li a{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: darkGray;
+}
+}
+
+.right-hand{
+    display: inline;
+    margin: 20px;
+    float: right;
+}
+
+#container{
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+#title{
+    margin-left: 20px;
+    padding: 50px 20px 50px 0px;
+}
+
+#inner_container{
+    background-color: white;
+    opacity: .9;
+    margin: 0px 20px 0px 20px;
+    padding: 50px 0px 50px 0px;
+    height: 100%;
+    min-height: 100%;
+
+}
+
+h1{
+    font-family: "Andale Mono", Impact;
+    font-size: 92px;
+    color: white;
+}
+
+h4{
+    margin-bottom: 20px;
+    font-family: "Andale Mono", Impact;
+}
+
+#registration, #login{
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid darkgray;
+    color: darkslategray;
+}
+
+#registration{
+    background-color: white;
+}
+
+#login{
+    background-color: ghostWhite;
+}
+
+table{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.errors{
+    color: red;
+    font-size: 10px;
+}
+
+.message_form{
+    margin-left: 20px;
+}
+
+.comment_form{
+    margin-left: 80px;
+}
+
+.message_info{
+    font-weight: bold;
+    font-family: arial;
+    font-size: 16px;
+    margin-left: 20px;
+    padding-top: 20px;
+    color: #26A6DB;
+}
+
+.message{
+    margin-left: 20px;
+    font-family: arial;
+    font-size: 16px;
+    display: block;
+}
+
+.comment_info{
+    font-weight: bold;
+    font-family: arial;
+    font-size: 12px;
+    margin-left: 80px;
+    color: #26A6DB;
+}
+
+.comment{
+    margin-left: 80px;
+    font-family: arial;
+    font-size: 12px;
+    display: block;
+}

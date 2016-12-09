@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+form{
+    margin: 20px;
+}
