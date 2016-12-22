@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Word</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <p>Random Word (attempt #{{ attempt }})</p>
+        </div>
+        <div id="word" style="outline:solid">
+            <h1>{{ random_string }}</h1>
+        </div>
+        <div id="form">
+            {{ request.session.random_string }}
+            <form action="/randomize" method = "POST">
+                {% csrf_token %}
+                <input type="submit" value="Generate">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

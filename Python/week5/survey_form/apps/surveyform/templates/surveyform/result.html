@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thank you</title>
+</head>
+<body>
+    <div id="container">
+        <p style="background-color:lightgreen; border:solid;">Thanks for submitting this form! You have submitted this form {{ request.session.attempt }} times now.</p>
+        <table>
+            <tr>
+                <th width="200px"><u>Submitted info:</u></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>{{ request.session.name }}</td>
+            </tr>
+            <tr>
+                <td>Dojo Location:</td>
+                <td>{{ request.session.location }}</td>
+            </tr>
+            <tr>
+                <td>Favorite Language</td>
+                <td>{{ request.session.language }}</td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td>{{ request.session.comment }}</td>
+            </tr>
+        </table>
+        <button><a href="/">Go Back</a></button>
+    </div>
+</body>
+</html>
