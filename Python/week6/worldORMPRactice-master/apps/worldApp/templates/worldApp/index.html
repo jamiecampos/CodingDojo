@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- For questions 1, 5, 6 -->
+    {% for country in countries  %}
+      <p>{{country.name}}</p>
+    {% endfor %}
+
+    <!-- For question 2 -->
+    <!-- {% for country in countries  %}
+      <p>{{country.name}}: {{country.count}}</p>
+    {% endfor %} -->
+
+    <!-- For question 3 -->
+    <!-- {% for city in cities  %}
+      <p>{{city.name}}, population {{city.population}}</p>
+    {% endfor %} -->
+
+    <!-- For question 4 -->
+    <!-- {% for language in languages %}
+        <p>{{language.country.name}}: {{language.language}} ({{language.percentage}})</p>
+    {% endfor %} -->
+
+    <!-- For question 7 -->
+    <!-- {% for city in cities  %}
+      <p>{{city.name}}, {{city.country.name}} <br>{{city.district}} District<br>Population: {{city.population}}</p><br>
+    {% endfor %} -->
+
+    <!-- For question 8 -->
+    <!-- {% for region in regions %}
+        <p>{{region.region}}: {{region.count}}</p>
+    {% endfor %} -->
+
+  </body>
+</html>

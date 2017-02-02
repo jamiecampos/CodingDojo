@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#container{
+    padding: 20px;
+    width: 985px;
+}
+
+#gold_box{
+    border: 1px solid;
+    padding: 6px;
+}
+
+.location{
+    text-align: center;
+    display: inline-block;
+    border: 1px solid;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 20px 20px 0px;
+}
+
+h4{
+    margin: 20px;
+}
+
+form{
+    margin: 20px;
+}
+
+#activities{
+    border: 1px solid;
+    padding: 10px;
+    width: 940px;
+}
