@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Friendships</title>
+  </head>
+  <body>
+    <h1> I've got some friends? </h1>
+    <!-- For filter/exclude methods -->
+    {% for user in users %}
+    <p>
+        {{ user.first_name }} {{ user.last_name}}
+    </p>
+    {% endfor %}
+
+    <!-- For get methods -->
+    <!-- <p>
+        {{ users.first_name }} {{ users.last_name }}
+    </p> -->
+
+    <!-- For friendships -->
+    <!-- {#% for friend in friendships %#}
+    <p>
+        {{ friend.user.first_name }} {{ friend.user.last_name}} is friends with {{ friend.friend.first_name }} {{ friend.friend.last_name }}
+    </p>
+    {#% endfor %#} -->
+  </body>
+</html>
